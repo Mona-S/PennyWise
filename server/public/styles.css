@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "PublicaPlay-UltraLight";
   src: url('./fonts/PublicaPlay-UltraLight.ttf') format("truetype");
@@ -22,10 +23,35 @@
   font-family: "PublicaPlay-Light";
   src: url('./fonts/PublicaPlay-Light.ttf') format("truetype");
 }
+
+@media all and (min-width: 481px) {
+  .saveGoalButton {
+    margin-left: 500px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    width: 103px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    background-color: #2cc0c8;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+}
+
 body {
 
   margin: 0;
-  display: flex;
+  /* display: flex; */
   align-content: center;
   align-items: center;
   justify-content: center
@@ -93,9 +119,16 @@ body {
 
 
 .card-container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+
+}
+
+.card-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 
@@ -227,7 +260,8 @@ body {
 }
 
 .-toward-6000 {
-  margin-left: 77px;
+  /* margin-left: 77px; */
+  margin-left: 40%;
   width: 261px;
   height: 28px;
  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
@@ -324,7 +358,7 @@ body {
   margin-bottom: 20px;
   width: 338px;
   height: 2px;
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
 }
 
 .add-button, .subtract-button {
@@ -338,7 +372,7 @@ body {
 
 .add-button {
   background-color: #2cc0c8;
-  margin-left: 98px;
+  /* margin-left: 98px; */
 
 }
 .subtract-button {
@@ -346,7 +380,23 @@ body {
   margin-left: 68px;
 }
 
-.Transaction-History, .getTransAmount {
+.Transaction-History1 {
+  margin-top: 26px;
+  /* width: 50%;
+  margin-left:25%; */
+  height: 40px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 25px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+ .getTransAmount {
   margin-top: 26px;
   width: 375px;
   height: 40px;
@@ -378,19 +428,47 @@ body {
 }
 
 .logo{
-  height:25vh;
-  width: 50vw;
-  margin-left: 73px;
+  height:30vh;
+  /* width:30vw; */
+  margin-left: 20px; 
 
 }
 
 .goalDetailsInput {
   background: transparent;
   margin-top: 32px;
-  margin-left:20px;
-  width: 317px;
+  /* margin-left:20px;
+  width: 317px; */
+  /* margin-left:25%; */
+  /* width:50%; */
+
   border: none;
   border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  font-size:18px;
+}
+
+.goalDetailsInput1 {
+  background: transparent;  
+  margin-top: 32px;
+  /* margin-left:20px;
+  width: 317px; */
+  /* margin-left:25%; */
+  width:75%;
+  border: none;
+  /* border-bottom: 1px solid #e0e0e0; */
+  text-align: center;
+  font-size:18px;
+}
+
+.goalDetailsInput2 {
+  background: transparent;
+  margin-top: 32px;
+  /* margin-left:20px;
+  width: 317px; */
+  /* margin-left:25%; */
+  /* width:50%; */
+  border: none;
   text-align: center;
   font-size:18px;
 }
@@ -458,9 +536,12 @@ body {
   color: rgb(163,176,190);
 }
 .saveGoalButton{
-  margin-left: 250px;
+  /* margin-left: 250px; */
+  margin-left: 38%;
+  margin-top:10px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  width: 103px;
+  /* width: 103px; */
+  width: 25%;
   height: 40px;
   font-size: 25px;
   font-weight: 200;
@@ -489,7 +570,7 @@ input[type=date] {
 
 
 
-.Date, .Amount {
+/* .Date, .Amount {
   display: inline-block;
   margin-top: 16px;
   margin-bottom: -15px;
@@ -505,8 +586,26 @@ input[type=date] {
   letter-spacing: normal;
   text-align: center;
   color: #a9a9a9;
-}
+} */
 
+
+.Date, .Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+ 
+  width: 50%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
 
  .transactionInputDate {
    margin-top: 10px;

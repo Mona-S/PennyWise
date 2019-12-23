@@ -164,7 +164,7 @@ export default class GoalDetails extends React.Component {
         <form>
           <div className="goalDetailsInput">
             <input
-              className="goalDetailsInput"
+              className="goalDetailsInput1"
               type="text"
               name="amount_changed"
               value={this.state.amount_changed}
@@ -172,24 +172,24 @@ export default class GoalDetails extends React.Component {
               placeholder="add or remove funds in $"
             ></input>
           </div>
-
-          <button
-            type="submit"
-            name="add"
-            className="add-button"
-            onClick={e => this.handleSubmit(e, 1)}
-          >
-            <span className="plus-symbol">+</span>
-          </button>
-          <button
-            type="submit"
-            name="subtract"
-            className="subtract-button"
-            onClick={e => this.handleSubmit(e, -1)}
-          >
-            <span className="minus-symbol">-</span>
-          </button>
-
+          <div className="goalDetailsInput2">
+            <button
+              type="submit"
+              name="add"
+              className="add-button"
+              onClick={e => this.handleSubmit(e, 1)}
+            >
+              <span className="plus-symbol">+</span>
+            </button>
+            <button
+              type="submit"
+              name="subtract"
+              className="subtract-button"
+              onClick={e => this.handleSubmit(e, -1)}
+            >
+              <span className="minus-symbol">-</span>
+            </button>
+          </div>
         </form>
       </React.Fragment>
     );
@@ -205,7 +205,7 @@ export default class GoalDetails extends React.Component {
 
   makeTransactionHistory() {
     return (
-      <div>
+      <div className="Transaction-History1">
         <div className="Transaction-History">Transaction History</div>
       </div>
     );
@@ -243,13 +243,13 @@ export default class GoalDetails extends React.Component {
     return (
 
       <React.Fragment>
-        <div className="card-container">
+        <div className="card-container1">
           {this.getDaysRemaining()}
         </div>
-        <div className="card-container">
+        <div className="card-container1">
           {this.getCardTitle()}
         </div>
-        <div className="card-container">
+        <div className="card-container1">
           {this.getProgress()}
         </div>
         {this.towardsSavings()}
