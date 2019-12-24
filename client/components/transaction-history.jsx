@@ -14,7 +14,7 @@ export default function TransactionHistory(props) {
           <span className="trans-amount plusTransaction transactionInputAmount">{inDollars(props.amount)}</span>)
           : (<span className="trans-amount minusTransaction transactionInputAmount">{inDollars(props.amount)}</span>
           )}
-        <hr></hr>
+        <br></br>
 
       </div>
 

@@ -252,6 +252,7 @@ body {
 }
 
 
+
 .minusTransaction {
   color: #ff0083;
 }
@@ -353,12 +354,12 @@ body {
 }
 
 .dateAmountLine {
-  margin-left: 18px;
+  margin-left: 15%;
   margin-top: -8px;
   margin-bottom: 20px;
-  width: 338px;
+  width: 70%;
   height: 2px;
-  /* background-color: #e0e0e0; */
+  background-color: #e0e0e0;
 }
 
 .add-button, .subtract-button {
@@ -443,7 +444,7 @@ body {
   /* width:50%; */
 
   border: none;
-  border-bottom: 1px solid #e0e0e0;
+  /* border-bottom: 1px solid #e0e0e0; */
   text-align: center;
   font-size:18px;
 }
@@ -454,9 +455,9 @@ body {
   /* margin-left:20px;
   width: 317px; */
   /* margin-left:25%; */
-  width:75%;
+  width:40%;
   border: none;
-  /* border-bottom: 1px solid #e0e0e0; */
+  border-bottom: 1px solid #e0e0e0;
   text-align: center;
   font-size:18px;
 }
@@ -484,9 +485,8 @@ body {
   font-style: italic;
   color: #219096;
   margin-top: 20px;
-
-
 }
+
 .formQuestion{
   font-size: 21px;
   padding-bottom: 50px;
@@ -502,10 +502,10 @@ body {
   color: #2cc0c8;
   text-align: center;
   margin-left: 73px;
-
 }
+
 .getStartedButton{
-  margin-top: 60px;
+  margin-top: 30px;
   margin-left: 40px;
   width: 240px;
   height: 70px;
@@ -519,6 +519,7 @@ body {
   background-color: #2cc0c7;
 
 }
+
 .getStartedText{
   margin-top: 20px;
 }
@@ -589,12 +590,12 @@ input[type=date] {
 } */
 
 
-.Date, .Amount {
+.Date {
   display: inline-block;
   margin-top: 16px;
   margin-bottom: -15px;
- 
-  width: 50%;
+  /* width: 40%; */
+  margin-left:30%;
   height: 50px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
   font-size: 22px;
@@ -603,17 +604,43 @@ input[type=date] {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
+  text-align: right;
   color: #a9a9a9;
+}
+
+.Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  /* width: 50%; */
+  margin-left:30%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+}
+
+.transContainer{
+  /* width:100%; */
+  /* margin-left: 2%; */
+
 }
 
  .transactionInputDate {
    margin-top: 10px;
-  width: 164px;
+  /* width: 164px; */
+  width: 40%;
   height: 64px;
+  margin-left:29%; 
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
-  font-size: 22px;
-  font-weight: 200;
+  /* font-size: 22px;
+  font-weight: 200; */
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -626,6 +653,226 @@ input[type=date] {
   text-align: right;
   width: 120px;
   height: 64px;
+  margin-left:30%; 
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  /* font-size: 22px;
+  font-weight: 200; */
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+
+/* .transactionInputDate, .transactionInputAmount {
+  padding: 43px;
+  margin-bottom: 12px;
+
+} */
+
+.plus-symbol, .minus-symbol {
+  font-size: 36px;
+  color: white;
+}
+
+@media screen and (max-width: 375px)  and (max-width: 667px) and (orientation: portrait){
+
+  .logo{
+    height:40vh;
+    /* width:30vw; */
+    /* margin-left: 35px;  */
+  }
+
+  .secondStatement{
+    width: 328px;
+    height: 10px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    color: #219096;
+    margin-top: 20px;
+  }
+
+  .getStartedNow{
+    margin-top: 10px;
+    width: 158px;
+    height: 20px;
+    font-family: "PublicaPlay-Medium", Helvetica, Arial, serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2cc0c8;
+    text-align: center;
+    margin-left: 73px;
+  }
+  
+  .getStartedButton{
+    margin-top: 22px;
+    margin-left: 40px;
+    width: 240px;
+    height: 70px;
+    border: solid 2px #2cc0c8;
+    font-family: "PublicaPlay-UltraLight",Helvetica, Arial, serif;
+    font-size: 36px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    background-color: #2cc0c7;
+  
+  }
+
+
+  .Date {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    /* width: 40%; */
+    margin-left:20%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a9a9a9;
+  }
+  
+  .Amount {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    /* width: 50%; */
+    margin-left:30%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a9a9a9;
+  }
+  
+  
+   .transactionInputDate {
+     margin-top: 10px;
+    /* width: 164px; */
+    width: 40%;
+    height: 64px;
+    margin-left:20%; 
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    /* font-size: 22px;
+    font-weight: 200; */
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a9a9a9;
+  }
+  
+   .transactionInputAmount {
+    text-align: right;
+    width: 120px;
+    height: 64px;
+    margin-left:25%; 
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    /* font-size: 22px;
+    font-weight: 200; */
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape)  {
+
+
+  .logo{
+    height:60vh;
+    /* width:30vw; */
+    margin-left: 35px; 
+  
+  }
+
+  .Date {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    /* width: 40%; */
+    margin-left:25%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a9a9a9;
+  }
+
+
+
+.Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  /* width: 50%; */
+  margin-left:26%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+}
+  .transactionInputDate {
+    margin-top: 10px;
+   /* width: 164px; */
+   width: 40%;
+   height: 64px;
+   margin-left:24%; 
+   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+   /* font-size: 22px;
+   font-weight: 200; */
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: #a9a9a9;
+ }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px)  and (orientation:portrait)
+{
+  
+  .Date {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  /* width: 40%; */
+  margin-left:27%;
+  height: 50px;
   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: 200;
@@ -634,14 +881,131 @@ input[type=date] {
   line-height: normal;
   letter-spacing: normal;
   text-align: right;
+  color: #a9a9a9;
 }
 
-.transactionInputDate, .transactionInputAmount {
-  padding: 43px;
-  margin-bottom: 12px;
+
+
+.Amount {
+display: inline-block;
+margin-top: 16px;
+margin-bottom: -15px;
+/* width: 50%; */
+margin-left:29%;
+height: 50px;
+font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+font-size: 22px;
+font-weight: 200;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #a9a9a9;
 }
 
-.plus-symbol, .minus-symbol {
-  font-size: 36px;
-  color: white;
+.transactionInputDate {
+  margin-top: 10px;
+ /* width: 164px; */
+ width: 40%;
+ height: 64px;
+ margin-left:25%; 
+ font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+ /* font-size: 22px;
+ font-weight: 200; */
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: #a9a9a9;
+}
+
+ .transactionInputAmount {
+  text-align: right;
+  width: 120px;
+  height: 64px;
+  margin-left:28%; 
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  /* font-size: 22px;
+  font-weight: 200; */
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px)  and (orientation: landscape) {
+
+  .Date {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    /* width: 40%; */
+    margin-left:27%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a9a9a9;
+  }
+  
+  
+  
+  .Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  /* width: 50%; */
+  margin-left:30%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+  }
+  
+  .transactionInputDate {
+    margin-top: 10px;
+   /* width: 164px; */
+   width: 40%;
+   height: 64px;
+   margin-left:25%; 
+   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+   /* font-size: 22px;
+   font-weight: 200; */
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: #a9a9a9;
+  }
+
+  .transactionInputAmount {
+    text-align: right;
+    width: 120px;
+    height: 64px;
+    margin-left:30%; 
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    /* font-size: 22px;
+    font-weight: 200; */
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
 }
