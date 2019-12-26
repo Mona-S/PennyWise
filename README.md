@@ -1,6 +1,6 @@
 Pennywise
 ---------------------------------------
-Full Stack application utilizing React, PHP and MYSQL to help you set goals like saving for a house. The application helps you create your goals, keeps a list of all the goals, helps you determine how much money you need to save per day and per month in order to achieve those goals, keeps track of your transactions (amount added or subtracted) towards a particular goal.
+Full Stack application utilizing React, PHP and MYSQL to help you set financial goals like saving for a new laptop. The application helps you create your goals, keeps a list of all the goals, helps you determine how much money you need to save per day and per month in order to achieve those goals, keeps track of the amount added or subtracted towards a particular goal.
 
 
 Project Tech Stack
