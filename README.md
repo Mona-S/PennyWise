@@ -1,5 +1,7 @@
 Pennywise
 ---------------------------------------
+Full Stack application utilizing React, PHP and MYSQL to help you set goals like saving for a house. The application helps you create your goals, keeps a list of all the goals, helps you determine how much money you need to save per day and per month in order to achieve those goals, keeps track of your transactions (amount added or subtracted) towards a particular goal.
+
 
 Project Tech Stack
 -------------------------------------------------------------------------
@@ -30,8 +32,8 @@ Initial Setup
 
 2.	Clone this repository in your terminal
 
-    •	git clone 
+    •	git clone https://github.com/Mona-S/pennywise.git
     
-3.	Navigate into the /The-Art-Cart directory
+3.	Navigate into the /pennywise directory
 
     •	Open the index.html file and enjoy!
