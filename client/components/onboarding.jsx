@@ -3,7 +3,7 @@ import React from 'react';
 function Onboarding(props) {
   return (
     <React.Fragment>
-      <div className="onBoarding">
+      <div className="onBoarding" >
         <p className="someStatement">Save Smarter</p>
         <img src="/images/piggybank.png" className="logo"></img>
 
