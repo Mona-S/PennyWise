@@ -24,14 +24,14 @@ Initial Setup
 ----------
 1. Fork this repo and clone your fork from your terminal
 
-  • Click on the Fork button, located at the top right of the page
+    • Click on the Fork button, located at the top right of the page
 
-  • Select your GitHub user name to complete the fork
+    • Select your GitHub user name to complete the fork
 
 2. Clone this repository in your terminal
 
-  • git clone https://github.com/Mona-S/pennywise.git
+    • git clone https://github.com/Mona-S/pennywise.git
 
 3. Navigate into the /pennywise directory
 
-  • Open the index.html file and enjoy!
+    • Open the index.html file and enjoy!
