@@ -1,0 +1,216 @@
+header{
+  background-color:  #28a4b6;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.anothercontainer{
+    border: 1px solid #28a4b6;
+    width:50%;
+    height:50px;
+    text-align: center;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h3, p{
+    padding: 0.5rem;
+    margin-left: 10px;
+    color:#28a4b6;
+
+}
+
+.whatAreYouSavingUpFor, .computer, .emptyLine {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.whatAreYouSavingUpFor {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  color: #28a4b6;
+  font-size: 1.3rem;
+}
+
+.computer {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  color: lightgray;
+  font-size: 1.3rem;
+}
+
+.emptyLine {
+  margin-top: -2rem;
+  margin-left: 1rem;
+  color: lightgray;
+}
+
+button {
+  margin-top: 5rem;
+  margin-right: 2rem;
+
+  background-color: #28a4b6;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  float: right;
+
+
+}
+
+
+.container{
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.totalAmount{
+    text-align: center;
+    color: blue;
+    font-size: 60px;
+    display: inline-block;
+}
+.remainingDays{
+    text-align: right;
+    color: blue;
+    font-size: 60px;
+    display: inline-block;
+}
+.item{
+    padding: 50px;
+    background-color: lightblue;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+.button2 {
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+.addButton {
+  background-color: lightblue;
+  width: 150px;
+  height: 100px;
+  padding: 50px;
+}
+.subtractButton {
+    width: 150px;
+    height: 100px;
+    padding: 50px;
+    background-color: red;
+}
+progress {
+  background-color: green;
+  border-radius: 2px;
+  height: 40px;
+  width: 800px;
+}
+input{
+  font-size: 50px;
+}
+
+.date {
+    display: inline-block;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 100px;
+    float: left;
+}
+
+.amount {
+    display: inline-block;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: -1.4rem;
+    float: right;
+}
+
+.transaction {
+  display: block;
+    font-size:50px;
+    text-align: center;
+
+}
+
+
+
+.amountPerDay {
+  float: left;
+  margin-left: 2rem;
+
+
+}
+
+.amountPerWeek {
+  float: right;
+  margin-right: 2rem;
+
+}
+
+.amountPerDay, .amountPerWeek {
+  color: #28a4b6;
+  margin-top: 2rem;
+  font-weight: 900;
+
+}
+
+.perDay {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.perWeek {
+  margin-top: 0;
+  margin-right: 1.5rem;
+}
+
+.newGoalCard {
+  margin-top: 5rem;
+  color: #28a4b6;
+  border: 1px solid #28a4b6;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.tripCard {
+  background-color: #28a4b6;
+}
+
+.macbookCard, .suitCard, .tripCard, .inactiveCard {
+  margin-top: 2rem;
+  border: 1px solid;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+
+}
+.macbookCard{
+  background-color: rgb(199, 51, 167)
+}
+
+.suitCard {
+  background-color: rgba(230, 156, 20, 0.856);
+}
+
+.inactiveCard {
+  background-color: gray;
+}
+
+.goalPerDay {
+  position: absolute;
+
+  right: 20px;
+}

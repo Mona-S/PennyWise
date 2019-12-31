@@ -1,0 +1,923 @@
+
+@font-face {
+  font-family: "PublicaPlay-UltraLight";
+  src: url('./fonts/PublicaPlay-UltraLight.ttf') format("truetype");
+}
+@font-face {
+  font-family: "PublicaPlay-Medium";
+  src: url('./fonts/PublicaPlay-Medium.ttf') format("truetype");
+}
+@font-face {
+  font-family: "PublicaPlay-UltraLightItalic";
+  src: url('./fonts/PublicaPlay-UltraLightItalic.ttf') format("truetype");
+}
+@font-face {
+  font-family: "PublicaPlay-RegularItalic";
+  src: url('./fonts/PublicaPlay-RegularItalic.ttf') format("truetype");
+}
+@font-face {
+  font-family: "PublicaPlay-BoldItalic";
+  src: url('./fonts/PublicaPlay-BoldItalic.ttf') format("truetype");
+}
+@font-face {
+  font-family: "PublicaPlay-Light";
+  src: url('./fonts/PublicaPlay-Light.ttf') format("truetype");
+}
+
+@media all and (min-width: 481px) {
+  .saveGoalButton {
+    margin-left: 500px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    width: 103px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    background-color: #2cc0c8;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+}
+
+body {
+
+  margin: 0;
+  align-content: center;
+  align-items: center;
+  justify-content: center
+}
+
+/* header items */
+.header {
+  position            : relative;
+  background-color    : #28a4b6;
+  top                 : 0px;
+  height              : 75px;
+  width               : 100vw;
+  text-align          : center;
+}
+.home-button {
+  top                 : 22px;
+  position            : absolute;
+  left                : 30px;
+  color               :#ffffff;
+}
+.header-title {
+  top                 : 22px;
+  position            : relative;
+  font-family         : "PublicaPlay-BoldItalic", Helvetica, Arial, serif;
+  font-size           : 36px;
+  color               :#ffffff;
+}
+/* end Header items */
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+
+/* goal totals text start */
+.goals-row {
+  position: relative;
+  width:100vw;
+  display: inline-flex;
+  margin-top: 42px;
+  margin-bottom: 26px;
+  justify-content: space-around;
+}
+.goals-total-container {
+    position: relative;
+    align-items: center;
+}
+.daily-totals-text, .weekly-totals-text {
+  font-family         : "PublicaPlay-Light", Helvetica, Arial, serif;
+  font-size           : 34.0px;
+  color               : #2cc0c8;
+  text-align          : right;
+  line-height         : 33.0px;
+}
+.per-day-text, .per-week-text {
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 24.0px;
+    color: #2cc0c8;
+    text-align: right;
+}
+/* end goal totals text */
+
+
+.card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* new goal */
+.new-goal-row {
+  position: relative;
+  width:100vw;
+  display: inline-flex;
+  margin-top: 34x;
+  margin-bottom: 34px;
+  justify-content: space-around;
+}
+.new-goal-button {
+  display: flex;
+  width: 327px;
+  height: 80px;
+  border: solid 2.5px #2cc0c8;
+  box-sizing: border-box;
+  font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 36px;
+  text-align: center;
+  color: #2cc0c8;
+}
+.new-goal-text {
+  align-self: center;
+  margin: auto;
+  color: #2cc0c8;
+}
+/* end new goal */
+
+
+
+
+
+/* goal cards */
+.goal-card {
+  display             : flex;
+  position            : relative;
+  margin-bottom       : 34px;
+  margin-left         : 17px;
+  margin-right        : 17px;
+  width               : 327px;
+  height              : 152px;
+  font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size           : 36.0px;
+  color               : #ffffff;
+}
+.goal-card-title {
+  margin: auto;
+}
+.teal {
+  background          : linear-gradient(to left, #182664, #2cc0c8);
+}
+.pink {
+  background-image    : linear-gradient(to left, #ff5cf7, #e57c65 100%);
+}
+.orange {
+  background-image    : linear-gradient(to left, #dd003d, #f36a04 51%, #ffde02);
+}
+.gray {
+  background-image    : linear-gradient(to left, #363535, #cccccc);
+}
+.daily-goal-amt {
+  position            : absolute;
+  bottom              : 10px;
+  right               : 20px;
+  font-family         : "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size           : 26.0px;
+  color               :#ffffff;
+}
+/* end goal cards */
+
+
+
+
+.days-number {
+  text-align: right;
+  height: 44px;
+  font-family: "PublicaPlay-RegularItalic", Helvetica, Arial, serif;
+  font-size: 44px;
+  font-weight: normal;
+  font-style: italic;
+  color: #2cc0c8;
+}
+
+
+.days-left-text {
+  width: 174px;
+  height: 33px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: italic;;
+  color: #2cc0c8;
+}
+
+.dailyDays {
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2cc0c8;
+}
+
+.weeklyWeeks {
+  width: 174px;
+  height: 33px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 24px;
+  margin-left: 249px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2cc0c8;
+}
+
+
+
+.minusTransaction {
+  color: #ff0083;
+}
+.plusTransaction {
+  color: #2cc0c8;
+}
+
+.-toward-6000 {
+  margin-left: 40%;
+  width: 261px;
+  height: 28px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2cc0c8;
+}
+
+
+ .dailyGoal, .weeklyGoal {
+  display: inline-block;
+  width: 188px;
+  height: 33px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2cc0c8;
+  overflow: hidden;
+}
+
+ .weeklyGoal{
+  float: right;
+
+}
+
+.dailyGoal {
+  float: left;
+}
+
+.progress-bar {
+  margin: 10px 12px 5px 0px;
+  height: 30px;
+}
+
+.bar-background {
+  margin-top: 4px;
+  width: 327px;
+  height: 20px;
+  background-color: #acabab;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.bar-green {
+  height: 20px;
+  background-color: #228B22;
+  z-index: 1;
+}
+
+.add-or-remove-funds {
+
+  width: 375px;
+  height: 40px;
+  margin-top: 76px;
+  margin-bottom: -67px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 30.0px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.Line {
+  margin-left: 35px;
+  width: 327px;
+  height: 2px;
+  background-color: #e0e0e0;
+}
+
+.Line2 {
+  margin-left: 18px;
+  margin-top: -8px;
+  width: 338px;
+  height: 2px;
+  background-color: #e0e0e0;
+}
+
+.dateAmountLine {
+  margin-left: 15%;
+  margin-top: -8px;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 2px;
+  background-color: #e0e0e0;
+}
+
+.add-button, .subtract-button {
+  display: inline-block;
+  position: static;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-top: 35px;
+}
+
+.add-button {
+  background-color: #2cc0c8;
+
+}
+.subtract-button {
+  background-color: #FF69B4;
+  margin-left: 68px;
+}
+
+.Transaction-History1 {
+  margin-top: 26px;
+  height: 40px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 25px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+ .getTransAmount {
+  margin-top: 26px;
+  width: 375px;
+  height: 40px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 25px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+
+.onBoarding{
+
+  position            : relative;
+  margin              : auto;
+  width               : 327px;
+  height              : 50px;
+}
+
+
+
+.someStatement{
+  font-family: "PublicaPlay-Medium", Helvetica, Arial, serif;
+  font-size: 48px;
+  font-style: italic;
+  color: #2cc0c8;
+
+}
+
+.logo{
+  height:30vh;
+  margin-left: 20px; 
+
+}
+
+.goalDetailsInput {
+  background: transparent;
+  margin-top: 32px;
+  border: none;
+  text-align: center;
+  font-size:18px;
+}
+
+.goalDetailsInput1 {
+  background: transparent;  
+  margin-top: 32px;
+  width: 55%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  font-size:18px;
+}
+
+.goalDetailsInput2 {
+  background: transparent;
+  margin-top: 32px;
+  border: none;
+  text-align: center;
+  font-size:18px;
+}
+
+
+
+.secondStatement, .formQuestion{
+  width: 328px;
+  height: 40px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: #219096;
+  margin-top: 20px;
+}
+
+.formQuestion{
+  font-size: 21px;
+  padding-bottom: 50px;
+}
+.getStartedNow{
+  margin-top: 30px;
+  width: 158px;
+  height: 20px;
+  font-family: "PublicaPlay-Medium", Helvetica, Arial, serif;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  color: #2cc0c8;
+  text-align: center;
+  margin-left: 73px;
+}
+
+.getStartedButton{
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 240px;
+  height: 70px;
+  border: solid 2px #2cc0c8;
+  font-family: "PublicaPlay-UltraLight",Helvetica, Arial, serif;
+  font-size: 36px;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  background-color: #2cc0c7;
+
+}
+
+.getStartedText{
+  margin-top: 20px;
+}
+.form-group{
+  display             : block;
+  position            : relative;
+  margin              : auto;
+  text-align          : center;
+  padding:30px;
+  margin-top: 20px;
+
+}
+
+::placeholder {
+  color: rgb(163,176,190);
+}
+.saveGoalButton{
+  margin-left: 38%;
+  margin-top:10px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  width: 25%;
+  height: 40px;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+  background-color: #2cc0c8;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.saveGoalText{
+  margin-top: 7px;
+}
+.form-control {
+  background: transparent;
+  width: 317px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 17px;
+}
+
+input[type=date] {
+  margin-left:3px;
+  font-size: 17px;
+  color: rgb(163,176,190);
+}
+
+.Date {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  margin-left:30%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #a9a9a9;
+}
+
+.Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  margin-left:30%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+}
+
+ .transactionInputDate {
+   margin-top: 10px;
+  width: 40%;
+  height: 64px;
+  margin-left:29%; 
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+ .transactionInputAmount {
+  text-align: right;
+  width: 120px;
+  height: 64px;
+  margin-left:30%; 
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+
+.plus-symbol, .minus-symbol {
+  font-size: 36px;
+  color: white;
+}
+
+@media screen and (max-width: 375px)  and (max-width: 667px) and (orientation: portrait){
+
+  .logo{
+    height:40vh;
+  }
+
+  .secondStatement{
+    width: 328px;
+    height: 10px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    color: #219096;
+    margin-top: 20px;
+  }
+
+  .getStartedNow{
+    margin-top: 10px;
+    width: 158px;
+    height: 20px;
+    font-family: "PublicaPlay-Medium", Helvetica, Arial, serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2cc0c8;
+    text-align: center;
+    margin-left: 73px;
+  }
+  
+  .getStartedButton{
+    margin-top: 22px;
+    margin-left: 40px;
+    width: 240px;
+    height: 70px;
+    border: solid 2px #2cc0c8;
+    font-family: "PublicaPlay-UltraLight",Helvetica, Arial, serif;
+    font-size: 36px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    background-color: #2cc0c7;
+  
+  }
+
+
+  .Date {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    margin-left:20%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a9a9a9;
+  }
+  
+  .Amount {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    margin-left:30%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a9a9a9;
+  }
+  
+  
+   .transactionInputDate {
+     margin-top: 10px;
+    width: 40%;
+    height: 64px;
+    margin-left:20%; 
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a9a9a9;
+  }
+  
+   .transactionInputAmount {
+    text-align: right;
+    width: 120px;
+    height: 64px;
+    margin-left:25%; 
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape)  {
+
+
+  .logo{
+    height:60vh;
+    margin-left: 35px; 
+  
+  }
+
+  .Date {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    margin-left:25%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a9a9a9;
+  }
+
+
+
+.Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  margin-left:26%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+}
+  .transactionInputDate {
+    margin-top: 10px;
+   width: 40%;
+   height: 64px;
+   margin-left:24%; 
+   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: #a9a9a9;
+ }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px)  and (orientation:portrait)
+{
+  
+  .Date {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  margin-left:27%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #a9a9a9;
+}
+
+
+
+.Amount {
+display: inline-block;
+margin-top: 16px;
+margin-bottom: -15px;
+margin-left:29%;
+height: 50px;
+font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+font-size: 22px;
+font-weight: 200;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #a9a9a9;
+}
+
+.transactionInputDate {
+  margin-top: 10px;
+ width: 40%;
+ height: 64px;
+ margin-left:25%; 
+ font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: normal;
+ text-align: center;
+ color: #a9a9a9;
+}
+
+ .transactionInputAmount {
+  text-align: right;
+  width: 120px;
+  height: 64px;
+  margin-left:28%; 
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px)  and (orientation: landscape) {
+
+  .Date {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: -15px;
+    margin-left:27%;
+    height: 50px;
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #a9a9a9;
+  }
+  
+  
+  
+  .Amount {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: -15px;
+  margin-left:30%;
+  height: 50px;
+  font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+  font-size: 22px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a9a9a9;
+  }
+  
+  .transactionInputDate {
+    margin-top: 10px;
+   width: 40%;
+   height: 64px;
+   margin-left:25%; 
+   font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   text-align: center;
+   color: #a9a9a9;
+  }
+
+  .transactionInputAmount {
+    text-align: right;
+    width: 120px;
+    height: 64px;
+    margin-left:30%; 
+    font-family: "PublicaPlay-UltraLight", Helvetica, Arial, serif;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+}
